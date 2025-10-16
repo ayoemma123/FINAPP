@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+</head>
+    <h1><B>THIS IS MY HOME PAGE</B></h1>
+    <hr>
+<body>
+    {% for transaction in transactions %}
+
+        <p>
+            Amount: {{ transaction.amount }}
+        </p>
+        <p>
+            Description: {{ transaction.description }} 
+        </p>
+        <hr>
+
+
+    {% endfor %}
+
+</body>
+</html>
